@@ -3,7 +3,7 @@ package xyz.axiumyu.paperDialogDsl.route
 import net.kyori.adventure.text.Component
 import org.bukkit.entity.Player
 import xyz.axiumyu.paperDialogDsl.PaperDialogDSL.Companion.mm
-import xyz.axiumyu.paperDialogDsl.dialog.AtomicDialogBlueprint
+import xyz.axiumyu.paperDialogDsl.dialog.AtomicDialog
 import xyz.axiumyu.paperDialogDsl.dialog.BaseDialog
 import xyz.axiumyu.paperDialogDsl.dialog.RootDialogSetup
 import xyz.axiumyu.paperDialogDsl.dialog.dsl.UIType
@@ -42,7 +42,7 @@ interface AtomicRoute : RouteBase{
      */
     fun onRollback(player: Player)
 
-    override fun render(context: DialogRouteContext): AtomicDialogBlueprint
+    override fun render(context: DialogRouteContext): AtomicDialog
 }
 
 /**
